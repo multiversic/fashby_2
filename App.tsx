@@ -48,7 +48,7 @@ const App: React.FC = () => {
                     <span className="text-slate-500">Neuve</span> ou de <span className="text-slate-500">Seconde Main</span>
                  </h1>
                  
-                 <div className="bg-white p-2 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 max-w-md">
+                 <div className="bg-white p-2 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.07)] border border-gray-100 max-w-md">
                    <form onSubmit={handleAiSearch}>
                       <div className="relative">
                          <input 
