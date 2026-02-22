@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || AIzaSyAhRKRncFK-cakyYHjkLlEwHUdULTm0w_M });
 
 export const getStylingAdvice = async (query: string): Promise<string> => {
   try {
