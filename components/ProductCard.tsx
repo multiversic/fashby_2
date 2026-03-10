@@ -64,4 +64,4 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, darkMode = false }) 
   );
 };
 
-export default ProductCard;
+export default React.memo(ProductCard);
