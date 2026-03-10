@@ -20,8 +20,3 @@ export interface FilterOption {
   label: string;
   value: string;
 }
-
-export interface AIResponse {
-  suggestion: string;
-  keywords: string[];
-}
