@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import { CATEGORIES, FEATURED_PRODUCTS, FILTERS, NEW_PRODUCTS } from './constants';
@@ -10,6 +10,13 @@ const App: React.FC = () => {
   const [aiQuery, setAiQuery] = useState('');
   const [aiAdvice, setAiAdvice] = useState<string | null>(null);
   const [loadingAi, setLoadingAi] = useState(false);
+
+  const handleCategoryClick = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+    const id = e.currentTarget.dataset.id;
+    if (id) {
+      setActiveCategory(id);
+    }
+  }, []);
 
   const handleAiSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -106,7 +113,8 @@ const App: React.FC = () => {
               {CATEGORIES.map(cat => (
                 <button 
                   key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
+                  data-id={cat.id}
+                  onClick={handleCategoryClick}
                   className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 ${
                     activeCategory === cat.id 
                       ? 'bg-slate-900 text-white shadow-lg shadow-slate-900/20' 
