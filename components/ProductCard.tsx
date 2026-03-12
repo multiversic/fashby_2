@@ -27,6 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, darkMode = false }) 
           src={product.imageUrl} 
           alt={product.title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
         />
         
         {/* Badge */}

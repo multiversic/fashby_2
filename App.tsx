@@ -188,7 +188,7 @@ const App: React.FC = () => {
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Premium Banner */}
             <div className="lg:col-span-1 relative rounded-2xl overflow-hidden min-h-[400px] group cursor-pointer">
-               <img src="https://picsum.photos/id/192/600/800" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Premium" />
+               <img src="https://picsum.photos/id/192/600/800" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Premium" loading="lazy" />
                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                <div className="absolute bottom-0 left-0 p-8 text-white">
                   <div className="text-amber-300 font-medium text-sm mb-2 tracking-wider flex items-center gap-2">
@@ -218,7 +218,7 @@ const App: React.FC = () => {
                    isFavorite: false
                 }} />
                  <div className="relative rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center group cursor-pointer border border-gray-200 hover:border-gray-300 transition-colors">
-                     <img src="https://picsum.photos/id/447/400/500" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" alt="Vendre" />
+                     <img src="https://picsum.photos/id/447/400/500" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" alt="Vendre" loading="lazy" />
                      <button className="relative z-10 bg-slate-900 text-white px-8 py-3 rounded-lg font-bold shadow-xl transform group-hover:scale-105 transition-all">
                         + METTRE EN VENTE
                      </button>
