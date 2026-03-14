@@ -1,6 +1,6 @@
-import { Product, Category } from './types';
+import { Product } from './types';
 
-export const CATEGORIES: Category[] = [
+export const CATEGORIES = [
   { id: '1', label: 'Femmes', isActive: true },
   { id: '2', label: 'Homme', isActive: false },
   { id: '3', label: 'Chaussures', isActive: false },

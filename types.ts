@@ -9,19 +9,3 @@ export interface Product {
   category: string;
   isFavorite?: boolean;
 }
-
-export interface Category {
-  id: string;
-  label: string;
-  isActive?: boolean;
-}
-
-export interface FilterOption {
-  label: string;
-  value: string;
-}
-
-export interface AIResponse {
-  suggestion: string;
-  keywords: string[];
-}
