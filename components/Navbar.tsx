@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Bell, Heart, User, Menu } from 'lucide-react';
+import { Search, Bell, Heart, Menu } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   return (
