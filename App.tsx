@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import { CATEGORIES, FEATURED_PRODUCTS, FILTERS, NEW_PRODUCTS } from './constants';
-import { SlidersHorizontal, ArrowRight, Sparkles, Search } from 'lucide-react';
+import { SlidersHorizontal, ArrowRight, Sparkles } from 'lucide-react';
 import { getStylingAdvice } from './services/geminiService';
 
 const App: React.FC = () => {
